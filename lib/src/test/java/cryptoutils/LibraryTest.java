@@ -6,9 +6,10 @@ package cryptoutils;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class LibraryTest {
-    @Test public void someLibraryMethodReturnsTrue() {
-        Library classUnderTest = new Library();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
-    }
+public class LibraryTest {    
+        @Test void appHasAGreeting() {
+            Hash classUnderTest = new Hash();
+            assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+        }
+
 }

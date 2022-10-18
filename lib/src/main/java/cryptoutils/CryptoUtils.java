@@ -3,8 +3,9 @@
  */
 package cryptoutils;
 
-public class Library {
-    public boolean someLibraryMethod() {
-        return true;
+public class CryptoUtils {
+    public static String getHash(byte[] message){
+
+        return null;
     }
 }
