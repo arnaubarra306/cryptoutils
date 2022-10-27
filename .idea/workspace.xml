@@ -5,17 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="594330f2-9441-4475-a1d0-c3ba5b44e92a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/cryptoutils/DigestResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/resources/certificate.cer" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/resources/m09.p12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/resources/message.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/cat/uvic/teknos/m09/cryptoutils/Library.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/cat/uvic/teknos/m09/cryptoutils/cryptoutils/CryptoUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/cat/uvic/teknos/m09/cryptoutils/models/Digest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/test/java/cat/uvic/teknos/m09/cryptoutils/LibraryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/cryptoutils/AsymmetricEncryption.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/cryptoutils/AsymmetricEncryption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/cryptoutils/CryptoUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/cryptoutils/Hash.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/cryptoutils/Hash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/cryptoutils/PropertiesFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/cryptoutils/SymmetricEncryption.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/cryptoutils/SymmetricEncryption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/resources/massage.properties" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/resources/cryptoutils.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/cryptoutils/AsymmetricEncryption.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/cryptoutils/DigestResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/cryptoutils/Hash.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/cryptoutils/Signature.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/cryptoutils/SymmetricEncryption.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/resources/certificate.cer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/resources/cryptoutils.properties" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/resources/cryptoutils.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/resources/m09.p12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/resources/message.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/cryptoutils/LibraryTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,18 +51,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/10028970/source/repos/cryptoutils/lib/src/main/resources&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_opened_file_path": "C:/Users/arnan/Downloads/cryptoutils",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\10028970\source\repos\cryptoutils\lib\src\main\resources" />
@@ -80,6 +87,11 @@
       <workItem from="1666357334077" duration="3052000" />
       <workItem from="1666371457025" duration="1777000" />
       <workItem from="1666616934247" duration="1383000" />
+      <workItem from="1666879709802" duration="479000" />
+      <workItem from="1666880255939" duration="50000" />
+      <workItem from="1666880315413" duration="14000" />
+      <workItem from="1666880340296" duration="16000" />
+      <workItem from="1666880446536" duration="309000" />
     </task>
     <servers />
   </component>
