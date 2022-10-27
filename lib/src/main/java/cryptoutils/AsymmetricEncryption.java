@@ -10,7 +10,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
 
 public class AsymmetricEncryption {
-    public static void main(String[] args) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IllegalBlockSizeException, BadPaddingException {
+    public static Object main(String[] args) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IllegalBlockSizeException, BadPaddingException {
         var plainText = "Plain text ".repeat(3).getBytes();
 
         var keyPairGenerator = KeyPairGenerator.getInstance("RSA");
@@ -32,5 +32,8 @@ public class AsymmetricEncryption {
         System.out.println("Plain text: " + new String(plainText));
         System.out.println("Cipher text: " + base64Encoder.encodeToString(cipherText));
         System.out.println("Decrypted text: " + new String(decryptedText));
+
+        return null;
+
     }
 }

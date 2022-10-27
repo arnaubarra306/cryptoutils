@@ -10,7 +10,7 @@ import java.util.Base64;
 
 public class SymmetricEncryption {
     public static void main(String[] args) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IllegalBlockSizeException, BadPaddingException, InvalidAlgorithmParameterException, InvalidKeySpecException {
-        var plaintText = "arnau".repeat(15);
+        var plaintText = "arnau".repeat(11);
         System.out.println("Plain text: " + plaintText);
 
         /*var keyGenerator = KeyGenerator.getInstance("AES");
