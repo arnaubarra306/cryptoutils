@@ -89,7 +89,42 @@ public class CryptoUtils {
 
         return cipher.doFinal(cipherText);
     }
+    public static byte[] sing () {
+        var message = Files.readAllBytes(Paths.get("app/src/main/resources/message.txt"));
 
+        var keystore = KeyStore.getInstance("PKCS12");
+        keystore.load(new FileInputStream("app/src/main/resources/m09.p12"), "Arnau03.".toCharArray());
+        var privateKey = keystore.getKey("self_signed_ca", "Arnau03.".toCharArray());
+
+        var signer = Signature.getInstance("SHA256withRSA");
+        signer.initSign((PrivateKey) privateKey);
+        signer.update(message);
+
+        var signature = signer.sign();
+
+        var base64Encoder = Base64.getEncoder();
+        var cipherTextBase64 = base64Encoder.encodeToString(signature);
+
+        System.out.println("Signature: " +  base64Encoder.encodeToString(signature));
+    }
+
+    public static byte[] verify () {
+        var certificateFactory = CertificateFactory.getInstance("X.509");
+        var certificate = certificateFactory.generateCertificate(new FileInputStream("app/src/main/resources/certificate.cer"));
+        try {
+            ((X509Certificate) certificate).checkValidity();
+        } catch( Exception e) {
+            System.out.println(e.getMessage());
+        }
+        var publicKey = certificate.getPublicKey();
+
+        signer.initVerify(publicKey);
+        signer.update(message);
+
+        var isValid = signer.verify(signature);
+
+        System.out.println("Signature is valid: " + isValid);
+    }
     public static void main(String[] args) {
         byte[] myvar = "Any String you want".getBytes();
         try {
