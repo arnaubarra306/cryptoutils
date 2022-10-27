@@ -137,4 +137,13 @@ public class CryptoUtils {
 
 
     }
+    @Test void When_Hash1SameAlgorithmAndNoSaltAsHash2_Expect_Hash1EqualsHash2AsTrue() {
+        synchronized (CryptoUtils.class) {
+            CryptoUtils.getProperties().setProperty("hash.algorithm","SHA-256");
+            CryptoUtils.getProperties().setProperty("hash.salt","false");
+            var message = "message";
+            var digestResult1 = CryptoUtils.hash(message.getBytes());
+            var digestResult2=CryptoUtils.hash(message.getBytes());
+            assertTrue(Arrays.equals(digestResult1.getHash(),digestResult2.getHash()));
+        }
 }
