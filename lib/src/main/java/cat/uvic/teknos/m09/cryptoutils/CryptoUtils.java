@@ -37,8 +37,8 @@ public class CryptoUtils {
 
     /***
      *
-     * @param errorCode
-     * @return hash return DigestRestult
+     * @param errorCode I used this paramether for saving the errorcode
+     * @return this method returns the hash that return DigestRestult
      */
     public static Digest hash(byte[] errorCode)  {
         byte[] salt =null;
@@ -68,7 +68,7 @@ public class CryptoUtils {
 
     /***
      *
-     * @return Salt
+     * @return this method returns the salt that return random bits for security
      */
     private static byte[] getSalt(){
         var securerandom= new SecureRandom();
@@ -79,7 +79,7 @@ public class CryptoUtils {
 
     /***
      *
-     * @return Propierties
+     * @return this method returns the propieties
      */
     public static Properties getProperties() {
         return properties;
@@ -87,9 +87,9 @@ public class CryptoUtils {
 
     /***
      *
-     * @param plainText
-     * @param password
-     * @return encrypted password and plainText
+     * @param plainText I used this paramether for saving the plainText that we introduce
+     * @param password I used this paramether for saving the password that we introduce
+     * @return this method returns the encrypted password and the plainText
      */
     public static byte[] encrypt(byte[] plainText, String password){
         var secretKey=getPrivateKeyFromPassword(password);
@@ -127,9 +127,9 @@ public class CryptoUtils {
 
     /***
      *
-     * @param cipherText
-     * @param password
-     * @return decrypted text and password
+     * @param cipherText I used this paramether for saving the cipherText that we introduce
+     * @param password  I used this paramether for saving the password that we introduce
+     * @return this method returns the plainText decrypted text and password
      */
     public static byte[] decrypt(byte[] cipherText,String password){
         var secretKey=getPrivateKeyFromPassword(password);
@@ -163,8 +163,8 @@ public class CryptoUtils {
 
     /***
      *
-     * @param password
-     * @return the private key from the password
+     * @param password  I used this paramether for saving the password that we introduce
+     * @return  this method returns the private key from the password
      */
     private static Key getPrivateKeyFromPassword(String password){
         String saltStr=properties.getProperty("symmetric.secretKeySalt");
