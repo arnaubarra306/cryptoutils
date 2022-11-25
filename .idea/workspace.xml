@@ -5,34 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="594330f2-9441-4475-a1d0-c3ba5b44e92a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/allclasses-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/allpackages-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/cat/uvic/teknos/m09/cryptoutils/CryptoUtils.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/cat/uvic/teknos/m09/cryptoutils/CryptoUtils.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/cat/uvic/teknos/m09/cryptoutils/exceptions/NotAlogtirhmExc.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/cat/uvic/teknos/m09/cryptoutils/exceptions/NotAlogtirhmExc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/cat/uvic/teknos/m09/cryptoutils/exceptions/NotKeyExc.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/cat/uvic/teknos/m09/cryptoutils/exceptions/NotKeyExc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/cat/uvic/teknos/m09/cryptoutils/exceptions/PropExc.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/cat/uvic/teknos/m09/cryptoutils/exceptions/PropExc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/cat/uvic/teknos/m09/cryptoutils/exceptions/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/cat/uvic/teknos/m09/cryptoutils/exceptions/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/cat/uvic/teknos/m09/cryptoutils/exceptions/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/cat/uvic/teknos/m09/cryptoutils/exceptions/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/cat/uvic/teknos/m09/cryptoutils/models/Digest.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/cat/uvic/teknos/m09/cryptoutils/models/Digest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/cat/uvic/teknos/m09/cryptoutils/models/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/cat/uvic/teknos/m09/cryptoutils/models/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/cat/uvic/teknos/m09/cryptoutils/models/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/cat/uvic/teknos/m09/cryptoutils/models/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/cat/uvic/teknos/m09/cryptoutils/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/cat/uvic/teknos/m09/cryptoutils/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/cat/uvic/teknos/m09/cryptoutils/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/cat/uvic/teknos/m09/cryptoutils/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/overview-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDoc/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/javaDoc/serialized-form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/cat/uvic/teknos/m09/cryptoutils/CryptoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/cat/uvic/teknos/m09/cryptoutils/CryptoUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +72,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "C:/Users/10028970/Dropbox/0TEKNOS/SEGON/M09/proyectos/cryptoutils",
+    "last_opened_file_path": "C:/Users/10028970/source/repos/remotecrypto",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -120,6 +94,34 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="cryptoutils" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="cryptoutils [publish]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publish" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.cryptoutils [publish]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -154,7 +156,7 @@
       <workItem from="1669322993031" duration="28000" />
       <workItem from="1669369738413" duration="240000" />
       <workItem from="1669370230207" duration="16000" />
-      <workItem from="1669383828700" duration="1530000" />
+      <workItem from="1669383828700" duration="2153000" />
     </task>
     <servers />
   </component>

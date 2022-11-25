@@ -9,6 +9,31 @@
 plugins {
     // Apply the java-library plugin for API and implementation separation.
     id 'java-library'
+    id 'maven-publish'
+}
+
+
+publishing{
+    repositories {
+        maven{
+            credentials {
+                username = "teknos2"
+                password = "Teknos01."
+            }
+            allowInsecureProtocol=true
+            name="teknos"
+            url='http://164.68.111.12:8081/nexus/content/repositories/maven-releases'
+        }
+    }
+
+    publications {
+        maven(MavenPublication) {
+            groupId 'cat.uvic.teknos.m09.arnaubarra'
+            artifactId 'cryptoutils'
+            version '1.2'
+            from components.java
+        }
+    }
 }
 
 repositories {
@@ -17,8 +42,6 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.testng:testng:7.1.0'
-
     // Use JUnit Jupiter for testing.
     testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
 
