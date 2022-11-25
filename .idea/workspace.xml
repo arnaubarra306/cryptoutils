@@ -7,6 +7,7 @@
     <list default="true" id="594330f2-9441-4475-a1d0-c3ba5b44e92a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/main/java/cat/uvic/teknos/m09/cryptoutils/CryptoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/cat/uvic/teknos/m09/cryptoutils/CryptoUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/cat/uvic/teknos/m09/cryptoutils/exceptions/NotAlogtirhmExc.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/cat/uvic/teknos/m09/cryptoutils/exceptions/NotAlogtirhmExc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/main/java/cat/uvic/teknos/m09/cryptoutils/exceptions/PropExc.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/cat/uvic/teknos/m09/cryptoutils/exceptions/PropExc.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +19,36 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cryptoutils" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cryptoutils" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cryptoutils" type="f1a62948:ProjectNode" />
+                <item name="lib" type="2d1252cf:ModuleNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -99,7 +130,7 @@
       <workItem from="1669322993031" duration="28000" />
       <workItem from="1669369738413" duration="240000" />
       <workItem from="1669370230207" duration="16000" />
-      <workItem from="1669383828700" duration="649000" />
+      <workItem from="1669383828700" duration="870000" />
     </task>
     <servers />
   </component>
