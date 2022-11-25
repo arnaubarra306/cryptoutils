@@ -3,12 +3,69 @@
  */
 package cat.uvic.teknos.m09.cryptoutils;
 
+import cat.uvic.teknos.m09.cryptoutils.exceptions.NotAlogtirhmExc;
+import cat.uvic.teknos.m09.cryptoutils.exceptions.NotKeyExc;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
-    @Test void someLibraryMethodReturnsTrue() {
-        Library classUnderTest = new Library();
-        assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
+    @Test void hashTest1() {
+        synchronized (CryptoUtils.class) {
+            CryptoUtils.getProperties().setProperty("hash.algorithm","SHA-256");
+            CryptoUtils.getProperties().setProperty("hash.salt","false");
+            var word = "hey!";
+            var digestResult1 = CryptoUtils.hash(word.getBytes());
+            var digestResult2=CryptoUtils.hash(word.getBytes());
+            assertTrue(Arrays.equals(digestResult1.getHash(),digestResult2.getHash()));
+        }
+    }
+    @Test void hashTest2() {
+        synchronized (CryptoUtils.class) {
+            CryptoUtils.getProperties().setProperty("hash.algorithm","SHA-256");
+            CryptoUtils.getProperties().setProperty("hash.salt","true");
+            var word = "hello!";
+            var digestResult1 = CryptoUtils.hash(word.getBytes());
+            CryptoUtils.getProperties().setProperty("hash.salt","false");
+            var digestResult2=CryptoUtils.hash(word.getBytes());
+            assertFalse(Arrays.equals(digestResult1.getHash(),digestResult2.getHash()));
+        }
+    }
+    @Test() void CreatinghashTest1() {
+        synchronized (CryptoUtils.class) {
+            CryptoUtils.getProperties().setProperty("hash.algorithm","3006");
+            CryptoUtils.getProperties().setProperty("hash.salt","false");
+            var message = "howRU?";
+            NotAlogtirhmExc notAlogtirhmExcTest=  assertThrows(NotAlogtirhmExc.class, () ->
+                    CryptoUtils.hash(message.getBytes())
+            );
+            Assertions.assertEquals("Problem with the file please check its all correct",notAlogtirhmExcTest.getMessage());
+        }
+    }
+    @Test() void EncryptPasswdTest() {
+        synchronized (CryptoUtils.class) {
+            var text="Wellcome to Arnau's Program";
+            var password="Kyn03";
+            var byteArray= text.getBytes();
+            byte[] encryptedTextByteArr =CryptoUtils.encrypt(byteArray,password);
+            byte[] decryptedTextByteArr=CryptoUtils.decrypt(encryptedTextByteArr,password);
+            String decryptedTex=new String(decryptedTextByteArr);
+            assertTrue(text.equals(decryptedTex));
+        }
+    }
+    @Test() void EncryptDecriptTests() {
+        synchronized (CryptoUtils.class) {
+            var text="Wellcome to Arnau's Program";
+            var password="Kyn03";
+            var secretPasswrd="Kynok03";
+            var byteArray= text.getBytes();
+            byte[] byteArrayEncripted =CryptoUtils.encrypt(byteArray,password);
+            assertThrows(NotKeyExc.class, () ->
+                    CryptoUtils.decrypt(byteArrayEncripted,secretPasswrd)
+            );
+        }
     }
 }

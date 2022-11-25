@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="594330f2-9441-4475-a1d0-c3ba5b44e92a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/cat/uvic/teknos/m09/cryptoutils/cryptoutils/CryptoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/cat/uvic/teknos/m09/cryptoutils/cryptoutils/CryptoUtils.java" afterDir="false" />
-    </list>
+    <list default="true" id="594330f2-9441-4475-a1d0-c3ba5b44e92a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +39,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/arnan/Downloads/cryptotests-master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/10028970/Downloads/cryptoutils-master/cryptoutils-master&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -50,8 +47,16 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="cat.uvic.teknos.m09.cryptoutils" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\10028970\Dropbox\0TEKNOS\SEGON\M09\proyectos\cryptoutils\lib\src\main\resources" />
       <recent name="C:\Users\10028970\source\repos\cryptoutils\lib\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\10028970\Dropbox\0TEKNOS\SEGON\M09\proyectos\cryptoutils\lib\src\main" />
+      <recent name="C:\Users\10028970\Dropbox\0TEKNOS\SEGON\M09\proyectos\cryptoutils\lib\src\main\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="cryptoutils" />
@@ -77,7 +82,18 @@
       <workItem from="1666880315413" duration="14000" />
       <workItem from="1666880340296" duration="16000" />
       <workItem from="1666880446536" duration="1069000" />
-      <workItem from="1666898194010" duration="71000" />
+      <workItem from="1666898194010" duration="153000" />
+      <workItem from="1668509207056" duration="305000" />
+      <workItem from="1668509536334" duration="785000" />
+      <workItem from="1668527902821" duration="254000" />
+      <workItem from="1668609696050" duration="3622000" />
+      <workItem from="1668678177183" duration="18000" />
+      <workItem from="1668694137130" duration="1344000" />
+      <workItem from="1668781407021" duration="235000" />
+      <workItem from="1668783507006" duration="36000" />
+      <workItem from="1669216801647" duration="1389000" />
+      <workItem from="1669322993031" duration="28000" />
+      <workItem from="1669369738413" duration="240000" />
     </task>
     <servers />
   </component>
