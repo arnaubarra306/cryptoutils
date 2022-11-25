@@ -1,6 +1,5 @@
 package cat.uvic.teknos.m09.cryptoutils;
 
-
 import cat.uvic.teknos.m09.cryptoutils.exceptions.NotAlogtirhmExc;
 import cat.uvic.teknos.m09.cryptoutils.exceptions.NotKeyExc;
 import cat.uvic.teknos.m09.cryptoutils.exceptions.PropExc;
@@ -36,6 +35,11 @@ public class CryptoUtils {
         }
     }
 
+    /***
+     *
+     * @param errorCode
+     * @return hash return DigestRestult
+     */
     public static Digest hash(byte[] errorCode)  {
         byte[] salt =null;
         Digest digestResult;
@@ -61,16 +65,32 @@ public class CryptoUtils {
         }
         return digestResult;
     }
+
+    /***
+     *
+     * @return Salt
+     */
     private static byte[] getSalt(){
         var securerandom= new SecureRandom();
         var salt=new byte[16];
         securerandom.nextBytes(salt);
         return salt;
     }
+
+    /***
+     *
+     * @return Propierties
+     */
     public static Properties getProperties() {
         return properties;
     }
 
+    /***
+     *
+     * @param plainText
+     * @param password
+     * @return encrypted password and plainText
+     */
     public static byte[] encrypt(byte[] plainText, String password){
         var secretKey=getPrivateKeyFromPassword(password);
         var cipherAlgorithm=properties.getProperty("symmetric.cipherAlgorithm");
@@ -89,21 +109,28 @@ public class CryptoUtils {
 
             return cipherText;
         } catch (NoSuchAlgorithmException e) {
-            throw new RuntimeException(e);
+            throw new NotAlogtirhmExc("Not good Alorithm");
         } catch (NoSuchPaddingException e) {
-            throw new RuntimeException(e);
+            throw new PropExc("Padding exception");
         } catch (InvalidAlgorithmParameterException e) {
-            throw new RuntimeException(e);
+            throw new NotAlogtirhmExc("Invalid algorith");
         } catch (InvalidKeyException e) {
-            throw new RuntimeException(e);
+            throw new NotKeyExc("Invalid detected or incorrect key");
         } catch (IllegalBlockSizeException e) {
-            throw new RuntimeException(e);
+            throw new PropExc("Illegal Block Size");
         } catch (BadPaddingException e) {
-            throw new RuntimeException(e);
+            throw new NotKeyExc("Not key detected or incorrect key");
         }
 
 
     }
+
+    /***
+     *
+     * @param cipherText
+     * @param password
+     * @return decrypted text and password
+     */
     public static byte[] decrypt(byte[] cipherText,String password){
         var secretKey=getPrivateKeyFromPassword(password);
         var cipherAlgorithm=properties.getProperty("symmetric.cipherAlgorithm");
@@ -120,19 +147,25 @@ public class CryptoUtils {
 
             return plainText;
         } catch (NoSuchAlgorithmException e) {
-            throw new RuntimeException(e);
+            throw new NotAlogtirhmExc("Not good Alorithm");
         } catch (NoSuchPaddingException e) {
-            throw new RuntimeException(e);
+            throw new PropExc("Padding exception");
         } catch (InvalidAlgorithmParameterException e) {
-            throw new RuntimeException(e);
+            throw new NotAlogtirhmExc("Invalid algorith");
         } catch (InvalidKeyException e) {
-            throw new RuntimeException(e);
+            throw new NotKeyExc("Invalid detected or incorrect key");
         } catch (IllegalBlockSizeException e) {
-            throw new RuntimeException(e);
+            throw new PropExc("Illegal Block Size");
         } catch (BadPaddingException e) {
             throw new NotKeyExc("Not key detected or incorrect key");
         }
     }
+
+    /***
+     *
+     * @param password
+     * @return the private key from the password
+     */
     private static Key getPrivateKeyFromPassword(String password){
         String saltStr=properties.getProperty("symmetric.secretKeySalt");
 
@@ -154,9 +187,9 @@ public class CryptoUtils {
             pbeKey = SecretKeyFactory.getInstance(secretKeyFactoryAlgorithm).generateSecret(pbeKeySpec);
             return new SecretKeySpec(pbeKey.getEncoded(), secretKeySpecAlgorithm);
         } catch (InvalidKeySpecException e) {
-            throw new RuntimeException(e);
+            throw new NotKeyExc("Invalid detected or incorrect key");
         } catch (NoSuchAlgorithmException e) {
-            throw new RuntimeException(e);
+            throw new NotAlogtirhmExc("Not good Alorithm");
         }
     }
 }

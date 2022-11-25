@@ -4,16 +4,11 @@ public class PropExc extends RuntimeException{
        public PropExc(String errorCode) {
         super(errorCode);
     }
-    /**
-     * @param errorCode Explains error
-     * @param problem Cause of the problem
-     */
+
     public PropExc(String errorCode, Throwable problem) {
         super(errorCode, problem);
     }
-    /**
-     * @param problem Cause of the problem
-     */
+
     public PropExc(String message, Throwable problem, boolean supressionOn, boolean StackTraceWritable) {
         super(message, problem, supressionOn, StackTraceWritable);
     }
