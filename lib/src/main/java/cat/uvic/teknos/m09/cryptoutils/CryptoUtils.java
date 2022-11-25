@@ -169,8 +169,6 @@ public class CryptoUtils {
     private static Key getPrivateKeyFromPassword(String password){
         String saltStr=properties.getProperty("symmetric.secretKeySalt");
 
-        byte[] salt= saltStr.getBytes();
-
 
         int iterationCount=Integer.parseInt(properties.getProperty("symmetric.iterations"));
 
@@ -181,7 +179,7 @@ public class CryptoUtils {
         String secretKeySpecAlgorithm=properties.getProperty("symmetric.secretKeySpecAlgorithm");
 
 
-        PBEKeySpec pbeKeySpec = new PBEKeySpec(password.toCharArray(), salt, iterationCount, keyLenght);
+        PBEKeySpec pbeKeySpec = new PBEKeySpec(password.toCharArray(), saltStr.getBytes(), iterationCount, keyLenght);
         SecretKey pbeKey = null;
         try {
             pbeKey = SecretKeyFactory.getInstance(secretKeyFactoryAlgorithm).generateSecret(pbeKeySpec);

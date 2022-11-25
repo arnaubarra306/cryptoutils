@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="594330f2-9441-4475-a1d0-c3ba5b44e92a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/cat/uvic/teknos/m09/cryptoutils/CryptoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/cat/uvic/teknos/m09/cryptoutils/CryptoUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/cat/uvic/teknos/m09/cryptoutils/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/cat/uvic/teknos/m09/cryptoutils/CryptoUtilsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +36,12 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="cryptoutils" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cryptoutils" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="publishing" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -95,7 +102,30 @@
       <recent name="cryptoutils" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.LibraryTest">
+    <configuration name="LibraryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":lib:test" />
+            <option value="--tests" />
+            <option value="&quot;cat.uvic.teknos.m09.cryptoutils.LibraryTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="cryptoutils [publish]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -119,6 +149,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LibraryTest" />
         <item itemvalue="Gradle.cryptoutils [publish]" />
       </list>
     </recent_temporary>
@@ -156,7 +187,7 @@
       <workItem from="1669322993031" duration="28000" />
       <workItem from="1669369738413" duration="240000" />
       <workItem from="1669370230207" duration="16000" />
-      <workItem from="1669383828700" duration="2153000" />
+      <workItem from="1669383828700" duration="3883000" />
     </task>
     <servers />
   </component>

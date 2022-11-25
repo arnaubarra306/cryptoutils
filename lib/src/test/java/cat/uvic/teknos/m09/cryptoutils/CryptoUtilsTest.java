@@ -12,8 +12,8 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class LibraryTest {
-    @Test void hashTest1() {
+class CryptoUtilsTest {
+    @Test void When_HashSameAlgorithmNoSalt_Expect_HashEqualsAsTrue() {
         synchronized (CryptoUtils.class) {
             CryptoUtils.getProperties().setProperty("hash.algorithm","SHA-256");
             CryptoUtils.getProperties().setProperty("hash.salt","false");
@@ -23,7 +23,7 @@ class LibraryTest {
             assertTrue(Arrays.equals(digestResult1.getHash(),digestResult2.getHash()));
         }
     }
-    @Test void hashTest2() {
+    @Test void When_HashSameAlgorithmAsHash2AndHasSalt_Expect_Hash_AsFalse() {
         synchronized (CryptoUtils.class) {
             CryptoUtils.getProperties().setProperty("hash.algorithm","SHA-256");
             CryptoUtils.getProperties().setProperty("hash.salt","true");
@@ -34,7 +34,7 @@ class LibraryTest {
             assertFalse(Arrays.equals(digestResult1.getHash(),digestResult2.getHash()));
         }
     }
-    @Test() void CreatinghashTest1() {
+    @Test() void When_CreatingHashAlgorithmPropertyIsNotRight_Expect_NotAlgorithmException() {
         synchronized (CryptoUtils.class) {
             CryptoUtils.getProperties().setProperty("hash.algorithm","3006");
             CryptoUtils.getProperties().setProperty("hash.salt","false");
@@ -45,7 +45,7 @@ class LibraryTest {
             Assertions.assertEquals("Problem with the file please check its all correct",notAlogtirhmExcTest.getMessage());
         }
     }
-    @Test() void EncryptPasswdTest() {
+    @Test() void When_EncryptAndDecryptUsingSamePassword_Expect_EqualsFinalTextAsTrue() {
         synchronized (CryptoUtils.class) {
             var text="Wellcome to Arnau's Program";
             var password="Kyn03";
@@ -56,7 +56,7 @@ class LibraryTest {
             assertTrue(text.equals(decryptedTex));
         }
     }
-    @Test() void EncryptDecriptTests() {
+    @Test() void When_EncryptAndDecryptUsingDifferentPassword_Expect_EqualsFinalTextAsTrue() {
         synchronized (CryptoUtils.class) {
             var text="Wellcome to Arnau's Program";
             var password="Kyn03";
